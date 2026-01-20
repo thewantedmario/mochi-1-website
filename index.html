@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>Mochi 1 AI Video Generator – Turn Text Into Cinematic Video</title>
+<meta name="description" content="Create smooth, motion-rich AI videos from text using Mochi 1. No sign-up required.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="nav">
+    <strong>Mochi 1</strong>
+
+    <div class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu">☰</div>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="prompt-library.html">Prompt Library</a>
+
+      <!-- TRY NOW CTA -->
+      <a href="playground.html" class="btn nav-cta">Try Now</a>
+    </nav>
+  </div>
+</header>
+
+
+<!-- HERO -->
+<section class="container hero" id="playground">
+  <div>
+    <h1>Mochi 1 AI Video Generator – Turn Text Into Cinematic Video</h1>
+
+    <p>
+      Create smooth, motion-rich AI videos from simple text prompts.
+      Mochi 1 focuses on realistic movement, cinematic camera motion,
+      and clean visual consistency — all directly in your browser.
+    </p>
+
+    <p><strong>No sign-up required · Free to try · Web-based AI video tool</strong></p>
+
+    <a class="btn" href="#prompt">Try the AI Video Playground</a>
+  </div>
+
+  <div class="card">
+    <strong>🎬 AI Video Playground</strong>
+
+    <div class="playground">
+      <textarea
+        id="prompt"
+        placeholder="Describe your cinematic scene here..."
+      ></textarea>
+
+      <button class="btn" onclick="generate()">Generate Video</button>
+
+      <div class="output" id="output">
+        Enter a prompt to generate an AI video.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY MOCHI 1 -->
+<section class="container">
+  <div class="section-title">
+    <h2>Why Creators Choose Mochi 1</h2>
+    <p>Designed for motion, realism, and simplicity — not complexity.</p>
+  </div>
+
+  <div class="card-grid">
+    <div class="card">
+      <h3>Strong Motion</h3>
+      <p>
+        Mochi 1 excels at generating videos with smooth subject movement
+        and realistic camera motion, avoiding stiff or jittery output.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Cinematic Quality</h3>
+      <p>
+        From lighting to framing, Mochi 1 is optimized for cinematic-style
+        video generation that looks natural and visually coherent.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Simple & Fast</h3>
+      <p>
+        No complicated setup, no learning curve. Just describe your idea
+        and generate AI video instantly.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="container">
+  <div class="section-title">
+    <h2>How Mochi 1 Works</h2>
+  </div>
+
+  <div class="card-grid">
+    <div class="card">
+      <h3>Write a Text Prompt</h3>
+      <p>Describe the scene, motion, camera style, and atmosphere.</p>
+    </div>
+
+    <div class="card">
+      <h3>Generate AI Video</h3>
+      <p>Mochi 1 transforms your prompt into a short cinematic video.</p>
+    </div>
+
+    <div class="card">
+      <h3>Preview and Refine</h3>
+      <p>Adjust your prompt and regenerate to explore new creative outcomes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="container">
+  <div class="section-title">
+    <h2>Powerful Features of Mochi 1 AI Video Generator</h2>
+  </div>
+
+  <div class="card-grid">
+    <div class="card">
+      <h3>Advanced Text-to-Video Generation</h3>
+      <p>
+        Transform natural language prompts into short, cinematic AI videos
+        by describing scenes, motion, lighting, and camera style.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Strong Motion & Temporal Consistency</h3>
+      <p>
+        Focused on smooth subject movement and stable frame transitions,
+        reducing flicker and unnatural motion.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Cinematic Camera Control</h3>
+      <p>
+        Create drone shots, tracking shots, slow motion, handheld camera feel,
+        and shallow depth of field directly through text.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Realistic Lighting & Atmosphere</h3>
+      <p>
+        Understands lighting cues like golden hour, neon glow, fog, rain,
+        shadows, and reflections for rich visuals.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Fast & Web-Based</h3>
+      <p>
+        No downloads or setup required. Generate AI videos directly in
+        your browser.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>No Login Required</h3>
+      <p>
+        Use the Mochi 1 playground without creating an account for
+        quick testing and creative exploration.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- USE CASES -->
+<section class="container">
+  <div class="section-title">
+    <h2>Who Is Mochi 1 For?</h2>
+  </div>
+
+  <div class="who-is-card-grid">
+    <div class="card">
+      <h3>Content Creators</h3>
+      <p>Visual storytelling, short clips, and creative experiments.</p>
+    </div>
+
+    <div class="card">
+      <h3>Marketers</h3>
+      <p>Concept videos, ad ideas, and creative previews.</p>
+    </div>
+
+    <div class="card">
+      <h3>Designers & Artists</h3>
+      <p>Visual ideation and motion concepts.</p>
+    </div>
+
+    <div class="card">
+      <h3>AI Enthusiasts</h3>
+      <p>Explore next-generation text-to-video models.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROMPT EXAMPLES -->
+<section class="container">
+  <div class="section-title">
+    <h2>Try These Mochi 1 Prompt</h2>
+    <p>
+      Use detailed prompts describing camera movement, lighting, motion,
+      and atmosphere to get the best cinematic results.
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="prompt-box">
+<pre id="home-prompt-1">
+A cinematic tracking shot following a car driving through a rainy city at night,
+neon lights reflecting on wet roads, smooth camera movement, ultra realistic
+</pre>
+      <button class="copy-btn" onclick="copyPrompt('home-prompt-1', this)">
+        Copy Prompt
+      </button>
+    </div>
+
+    <div class="prompt-box">
+<pre id="home-prompt-2">
+Slow-motion shot of a dancer performing on an empty stage,
+soft spotlight lighting, shallow depth of field, dramatic atmosphere
+</pre>
+      <button class="copy-btn" onclick="copyPrompt('home-prompt-2', this)">
+        Copy Prompt
+      </button>
+    </div>
+
+    <div class="prompt-box">
+<pre id="home-prompt-3">
+Aerial drone shot flying over snow-covered mountains at sunrise,
+golden hour lighting, cinematic wide-angle lens, smooth motion
+</pre>
+      <button class="copy-btn" onclick="copyPrompt('home-prompt-3', this)">
+        Copy Prompt
+      </button>
+    </div>
+
+    <p style="margin-top:20px;">
+      💡 <strong>Tip:</strong> The more detail you include about
+      <em>camera angle, motion speed, lighting, and mood</em>,
+      the better the AI video output will be.
+    </p>
+  </div>
+</section>
+
+
+<!-- FAQ -->
+<section class="container">
+  <div class="section-title">
+    <h2>Frequently Asked Questions</h2>
+    <p>Everything you need to know before using Mochi 1.</p>
+  </div>
+
+  <div class="card faq">
+
+    <div class="faq-item">
+      <button class="faq-question">
+        What is Mochi 1 AI Video Generator?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Mochi 1 is an AI-powered text-to-video generator that creates short,
+          cinematic video clips from natural language prompts with smooth motion
+          and realistic visuals.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How does Mochi 1 work?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          You describe a scene using text. Mochi 1 interprets camera motion,
+          subject movement, lighting, and atmosphere to generate a video sequence.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Is Mochi 1 free to use?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Yes. You can try Mochi 1 directly in your browser without signing up.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Do I need video editing or technical skills?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          No. Mochi 1 is designed for creators of all skill levels and works
+          entirely from plain text prompts.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        What kind of videos can Mochi 1 generate?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Cinematic shots, motion scenes, concept videos, creative visuals,
+          and experimental AI video outputs.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Can I regenerate videos with different styles?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Yes. You can modify camera angles, lighting, motion speed,
+          or mood in your prompt and generate a new result.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Do I need to download any software?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          No. Mochi 1 works entirely online in your browser.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- FINAL CTA -->
+<section class="container">
+  <div class="section-title">
+    <h2>Ready to Create AI Videos?</h2>
+    <p>Turn your ideas into motion in seconds.</p>
+    <a class="btn" href="#playground">Try Mochi 1 Now</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+
+    <!-- BRAND -->
+    <div class="footer-col">
+      <strong class="footer-logo">Mochi 1</strong>
+      <p class="footer-desc">
+        Mochi 1 is an AI video generator that turns text prompts into
+        cinematic videos with smooth motion and realistic visuals.
+      </p>
+    </div>
+
+    <!-- PRODUCT -->
+    <div class="footer-col">
+      <h4>Product</h4>
+      <a href="playground.html">AI Video Playground</a>
+      <a href="prompt-library.html">Prompt Library</a>
+      <a href="blog.html">Blog</a>
+    </div>
+
+    <!-- RESOURCES -->
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="blog.html">Guides & Tutorials</a>
+      <a href="prompt-library.html">Prompt Examples</a>
+      <a href="index.html#playground">Try Mochi 1</a>
+    </div>
+
+    <!-- LEGAL -->
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Mochi 1. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

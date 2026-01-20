@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>Mochi 1 Playground – Generate AI Video from Text</title>
+<meta name="description" content="Use the Mochi 1 AI video playground to generate cinematic videos from text prompts. No signup required.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="nav">
+    <strong>Mochi 1</strong>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="prompt-library.html">Prompt Library</a>
+      <a href="playground.html" class="btn nav-cta">Try Now</a>
+    </nav>
+  </div>
+</header>
+
+<!-- PLAYGROUND -->
+<section class="container">
+  <div class="section-title">
+    <h1>Mochi 1 AI Video Playground</h1>
+    <p>Write a prompt and generate a cinematic AI video instantly.</p>
+  </div>
+
+  <div class="card">
+    <div class="playground">
+      <textarea
+        id="prompt"
+        placeholder="A cinematic drone shot flying through a futuristic city at night, neon lights, smooth camera motion..."
+      ></textarea>
+
+      <button class="btn" onclick="generate()">Generate Video</button>
+
+      <div class="output" id="output">
+        Enter a prompt to generate an AI video.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO USE -->
+<section class="container">
+  <div class="section-title">
+    <h2>How to Use Mochi 1</h2>
+  </div>
+
+  <div class="card-grid">
+    <div class="card">
+      <h3>1. Write a Prompt</h3>
+      <p>Describe the scene, camera movement, lighting, and mood.</p>
+    </div>
+
+    <div class="card">
+      <h3>2. Generate Video</h3>
+      <p>Click generate and let Mochi 1 create your video.</p>
+    </div>
+
+    <div class="card">
+      <h3>3. Refine & Regenerate</h3>
+      <p>Change details in your prompt to explore variations.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ (DROPDOWN) -->
+<section class="container">
+  <div class="section-title">
+    <h2>Playground FAQs</h2>
+  </div>
+
+  <div class="card faq">
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Is the Mochi 1 Playground free?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Yes. You can use the playground without signing up.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        What kind of prompts work best?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Detailed prompts describing camera movement, lighting, motion, and mood.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Do I need video editing skills?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>No. Everything is controlled through text prompts.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How long are generated videos?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Short cinematic clips optimized for smooth motion.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+
+    <!-- BRAND -->
+    <div class="footer-col">
+      <strong class="footer-logo">Mochi 1</strong>
+      <p class="footer-desc">
+        Mochi 1 is an AI video generator that turns text prompts into
+        cinematic videos with smooth motion and realistic visuals.
+      </p>
+    </div>
+
+    <!-- PRODUCT -->
+    <div class="footer-col">
+      <h4>Product</h4>
+      <a href="playground.html">AI Video Playground</a>
+      <a href="prompt-library.html">Prompt Library</a>
+      <a href="blog.html">Blog</a>
+    </div>
+
+    <!-- RESOURCES -->
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="blog.html">Guides & Tutorials</a>
+      <a href="prompt-library.html">Prompt Examples</a>
+      <a href="index.html#playground">Try Mochi 1</a>
+    </div>
+
+    <!-- LEGAL -->
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Mochi 1. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
