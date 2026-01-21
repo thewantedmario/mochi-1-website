@@ -12,23 +12,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="assets/css/styles.css">
+<link rel="canonical" href="https://mochi-1.com/playground">
 </head>
 
 <body>
 
-<!-- HEADER -->
-<header>
-  <div class="nav">
-    <strong>Mochi 1</strong>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <nav class="nav-links" id="navLinks">
-      <a href="index.html">Home</a>
-      <a href="blog.html">Blog</a>
-      <a href="prompt-library.html">Prompt Library</a>
-      <a href="playground.html" class="btn nav-cta">Try Now</a>
-    </nav>
-  </div>
-</header>
+<div data-include="header"></div>
 
 <!-- PLAYGROUND -->
 <section class="container">
@@ -128,50 +117,9 @@
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="container footer-grid">
+<div data-include="footer"></div>
 
-    <!-- BRAND -->
-    <div class="footer-col">
-      <strong class="footer-logo">Mochi 1</strong>
-      <p class="footer-desc">
-        Mochi 1 is an AI video generator that turns text prompts into
-        cinematic videos with smooth motion and realistic visuals.
-      </p>
-    </div>
-
-    <!-- PRODUCT -->
-    <div class="footer-col">
-      <h4>Product</h4>
-      <a href="playground.html">AI Video Playground</a>
-      <a href="prompt-library.html">Prompt Library</a>
-      <a href="blog.html">Blog</a>
-    </div>
-
-    <!-- RESOURCES -->
-    <div class="footer-col">
-      <h4>Resources</h4>
-      <a href="blog.html">Guides & Tutorials</a>
-      <a href="prompt-library.html">Prompt Examples</a>
-      <a href="index.html#playground">Try Mochi 1</a>
-    </div>
-
-    <!-- LEGAL -->
-    <div class="footer-col">
-      <h4>Legal</h4>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Service</a>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    <p>© <span id="year"></span> Mochi 1. All rights reserved.</p>
-  </div>
-</footer>
-
-
+<script src="assets/js/includes.js"></script>
 <script src="assets/js/app.js"></script>
 </body>
 </html>
