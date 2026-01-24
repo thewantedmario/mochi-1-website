@@ -40,7 +40,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Blog Posts -->
   <url>
     <loc>https://www.mochi-1.com/blog/ai-video-generator</loc>
     <changefreq>monthly</changefreq>
